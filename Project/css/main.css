@@ -1,11 +1,72 @@
+/* General Styling for Navbar */
+.navbar-nav {
+    align-items: center; /* Aligns items vertically in the center */
+}
+
+/* Carousel Custom Styling */
+.carousel {
+    margin-top: 0px; /* Reduces space between the navbar and carousel */
+    max-height: 300px; /* Limits the height of the carousel images */
+    object-fit: cover; /* Ensures images cover the area well without distortion */
+}
+
+.carousel-item img {
+    height: 300px; /* Ensures consistent height for all images */
+    object-fit: cover; /* Prevents image distortion */
+}
+.my-carousel {
+    margin-top: 0; /* Removes top margin to reduce space between navbar and carousel */
+    max-height: 300px; /* Limits the height of carousel images */
+    object-fit: cover; /* Ensures images cover the area well without distortion */
+}
+
+.carousel-item img {
+    height: 300px; /* Ensures consistent height for all images */
+    object-fit: cover; /* Prevents image distortion */
+}
+
+
+/* General Styling for Cards */
+.card {
+    height: auto; /* Adjusts height based on content */
+    margin: 10px; /* Adds spacing around cards */
+}
+
+.card-img-top {
+    width: 100%; /* Ensures the image covers the full width of the card */
+    height: 150px; /* Sets a fixed height for uniformity */
+    object-fit: cover; /* Ensures images are sized correctly within the bounds */
+}
+
+/* Footer Styles */
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: aliceblue;
-    color: white;
+    background-color: aliceblue; /* Light blue background */
+    color: #adb5bd; /* Dark text for better visibility */
     text-align: center;
     padding: 10px;
-    font-size: 0.5rem;
+    font-size: 0.5rem; /* Small text size, consider increasing if too small */
+}
+
+/* Custom CSS for Team Image Size */
+.img-team {
+    max-height: 400px; /* Limits the maximum height of the image */
+    margin: 0 auto; /* Centers the image horizontally within its container */
+    display: block; /* Ensures the image is treated as a block for centering purposes */
+}
+
+/* Vertical Alignment for Items in the Same Row */
+.align-items-center {
+    align-items: center; /* Aligns items vertically in the center */
+}
+
+/* Enhance Readability and Visibility of Footer Text */
+.footer {
+    color: #adb5bd; /* Ensures text is visible against a light background */
+}
+body {
+    padding-bottom: 100px;
 }

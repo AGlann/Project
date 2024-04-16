@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My First Bootstrap Page</title>
+    <title>Home Page</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           rel="stylesheet"
@@ -14,64 +14,123 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-            <nav class="navbar navbar-expand-md
-                    justify-content-start
-                    bg-dark navbar-dark
-                    col-12">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark col-12">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">
+                <img src="Images/logo.png" alt="Logo" style="height: 50px;">
+            </a>
+            <!-- Responsive Button for the smaller menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <!-- Brand -->
-                <a class="navbar-brand" href="#Images/logo.jpg">Logo</a>
-                <!-- Responsive Button for the smaller menu -->
-                <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <!-- Links -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about.html">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact.html">Contact</a>
-                        </li>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto">
+                    <!-- Left aligned item (About Us) -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                </ul>
 
-                        <!-- Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
-                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Resources
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Internship Opportunities</a>
-                                <a class="dropdown-item" href="#">Resume Building Skills</a>
-                                <a class="dropdown-item" href="#">Networking Events</a>
-                                <a class="dropdown-item" href="#">Latest Tech Trends</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        <div class="row">
-        <p class="col-1">Col 1</p>
-        <p class="col-1">Col 2</p>
-        <p class="col-1">Col 3</p>
-        <p class="col-1">Col 4</p>
-        <p class="col-1">Col 5</p>
-        <p class="col-1">Col 6</p>
-        <p class="col-1">Col 7</p>
-        <p class="col-1">Col 8</p>
-        <p class="col-1">Col 9</p>
-        <p class="col-1">Col 10</p>
-        <p class="col-1">Col 11</p>
-        <p class="col-1">Col 12</p>
-        </div>
-    <div class="col-sm-4  text-center">
-        <h2>h2 Bootstrap heading (24px)</h2>
-        <h3>h2 Bootstrap heading (18px)</h3>
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="Internship.html">Internship Opportunities</a>
+                            <a class="dropdown-item" href="Resume.html">Resume Building Skills</a>
+                            <a class="dropdown-item" href="Networking.html">Networking Events</a>
+                            <a class="dropdown-item" href="techtrend.html">Latest Tech Trends</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Right-aligned nav item -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
 </div>
- <footer class="footer page-footer font-small ">
+        <!-- Carousel with added margin for spacing -->
+<div id="homepageCarousel" class="carousel slide my-carousel" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="Images/carousel.jpg" class="d-block w-100" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+            <img src="Images/carousel2.jpg" class="d-block w-100" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+            <img src="Images/carouselr.jpg" class="d-block w-100" alt="Slide 3">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#homepageCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#homepageCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+        <div class = "container my-4">
+            <div class = "row">
+            <!-- Card 1 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Images/Internship1.jpg" class="card-img-top" alt="Card 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Internship Opportunities</h5>
+                        <p class="card-text"> Learn about diverse internships opportunities.</p>
+                        <a href="Internship.html" class="btn btn-primary"> Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Images/resume-image-3.jpg" class="card-img-top" alt="Card 2 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Resume Building</h5>
+                        <p class="card-text"> Offering tips and tricks on crafting a resume.</p>
+                        <a href="Resume.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Images/networking.jpg" class="card-img-top" alt="Card 3 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Networking Events</h5>
+                        <p class="card-text"> Learn about upcoming networking events.</p>
+                        <a href="Networking.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Images/tech3.jpg" class="card-img-top" alt="Card 4 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Tech Trends</h5>
+                        <p class="card-text">Get updated on the newest tech trends.</p>
+                        <a href="techtrend.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <footer class="footer page-footer font-small ">
      <div class="container">
         <div class="row">
             <span class="text-muted">&copy; Art Hendela, 2021 |  Terms Of Use  |  Privacy Statement</span>

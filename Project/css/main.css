@@ -1,41 +1,46 @@
+/* DEVELOPER: Andrew Glanville, IS117-102, Spring 2024 */
 /* General Styling for Navbar */
 .navbar-nav {
     align-items: center; /* Aligns items vertically in the center */
 }
 
-/* Carousel Custom Styling */
+.navbar-dark .navbar-brand, .navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+/*Carousel Custom Styling */
 .carousel {
-    margin-top: 0px; /* Reduces space between the navbar and carousel */
-    max-height: 300px; /* Limits the height of the carousel images */
-    object-fit: cover; /* Ensures images cover the area well without distortion */
+    margin-top: 0px;
+    max-height: 300px;
+    object-fit: cover;
 }
 
 .carousel-item img {
-    height: 300px; /* Ensures consistent height for all images */
-    object-fit: cover; /* Prevents image distortion */
+    height: 300px;
+    object-fit: cover;
 }
 .my-carousel {
-    margin-top: 0; /* Removes top margin to reduce space between navbar and carousel */
-    max-height: 300px; /* Limits the height of carousel images */
-    object-fit: cover; /* Ensures images cover the area well without distortion */
+    margin-top: 0;
+    max-height: 300px;
+    object-fit: cover;
 }
 
 .carousel-item img {
-    height: 300px; /* Ensures consistent height for all images */
-    object-fit: cover; /* Prevents image distortion */
+    height: 300px;
+    object-fit: cover;
 }
 
 
 /* General Styling for Cards */
 .card {
-    height: auto; /* Adjusts height based on content */
-    margin: 10px; /* Adds spacing around cards */
+    height: auto;
+    margin: 10px;
 }
 
 .card-img-top {
-    width: 100%; /* Ensures the image covers the full width of the card */
-    height: 150px; /* Sets a fixed height for uniformity */
-    object-fit: cover; /* Ensures images are sized correctly within the bounds */
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
 }
 
 /* Footer Styles */
@@ -45,17 +50,15 @@
     bottom: 0;
     width: 100%;
     background-color: aliceblue; /* Light blue background */
-    color: #adb5bd; /* Dark text for better visibility */
+    color: white;
     text-align: center;
     padding: 10px;
-    font-size: 0.5rem; /* Small text size, consider increasing if too small */
+    font-size: 1rem;
 }
-
-/* Custom CSS for Team Image Size */
-.img-team {
-    max-height: 400px; /* Limits the maximum height of the image */
-    margin: 0 auto; /* Centers the image horizontally within its container */
-    display: block; /* Ensures the image is treated as a block for centering purposes */
+@media(max-width: 768px){
+    .footer{
+        font-size: 0.875em;
+    }
 }
 
 /* Vertical Alignment for Items in the Same Row */
@@ -63,10 +66,7 @@
     align-items: center; /* Aligns items vertically in the center */
 }
 
-/* Enhance Readability and Visibility of Footer Text */
-.footer {
-    color: #adb5bd; /* Ensures text is visible against a light background */
-}
+
 body {
     padding-bottom: 100px;
 }
